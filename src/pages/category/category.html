@@ -14,6 +14,10 @@
 
 
 <ion-content>
+	<ion-fab right bottom>
+		<button ion-fab color="light" (click)="openModal()"><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+
 	<ion-grid style="min-height: 100%">
 		<ion-row style="min-height: 50%">
 			<ion-col col-6>
@@ -27,7 +31,7 @@
 			<ion-col col-6>
 				<button ion-button full color="secondary" style="min-height: 100%">
 					<div>
-						<ion-icon name='ion-ios-people'></ion-icon><br><br>
+						<ion-icon name='people'></ion-icon><br><br>
 						<label>Social</label>
 					</div> 
 				</button>
@@ -37,7 +41,7 @@
 			<ion-col col-6>
 				<button ion-button full color="dark" style="min-height: 100%">
 					<div>
-						<ion-icon name='ion-ios-medkit'></ion-icon><br><br>
+						<ion-icon name='medkit'></ion-icon><br><br>
 						<label>Mental</label>
 					</div> 
 				</button>
@@ -45,7 +49,7 @@
 			<ion-col col-6>
 				<button ion-button full style="min-height: 100%">
 					<div>
-						<ion-icon name='ion-earth'></ion-icon><br><br>
+						<ion-icon name='globe'></ion-icon><br><br>
 						<label>General</label>
 					</div> 
 				</button>

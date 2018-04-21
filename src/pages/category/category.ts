@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { QModalPage } from '../q-modal/q-modal';
 
 /**
  * Generated class for the CategoryPage page.
