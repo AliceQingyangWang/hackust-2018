@@ -1,0 +1,40 @@
+<!--
+  Generated template for the QModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ask a Question</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<form (ngSubmit)="createQuestion()">
+  <ion-item>
+    <ion-label fixed>Title</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="question.title" name="title"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Category</ion-label>
+    <ion-select [(ngModel)]="question.categories" multiple="true" name="categories">
+      <ion-option value="sexual" >Sexual</ion-option>
+      <ion-option value="social" >Social</ion-option>
+      <ion-option value="mental" >Mental</ion-option>
+      <ion-option value="general">General</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+      <ion-label stacked>Body</ion-label>
+      <ion-textarea type="text" [(ngModel)]="question.body" name="body"></ion-textarea>
+  </ion-item>
+
+  <button ion-button type="submit" block>Submit Question</button>
+</form>
+</ion-content>

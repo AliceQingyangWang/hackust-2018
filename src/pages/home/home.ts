@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
+
+import { QModalPage } from '../q-modal/q-modal';  
 
 @Component({
   selector: 'page-home',
@@ -7,8 +9,12 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController, public modal : ModalController) {
   }
 
+  openModal() {
+    let myQModal = this.modal.create(QModalPage);
+    myQModal.present();
+
+  }
 }
