@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
-
+import { QuestionListPage } from '../question-list/question-list';
 import { QModalPage } from '../q-modal/q-modal';  
 
 @Component({
@@ -8,7 +8,8 @@ import { QModalPage } from '../q-modal/q-modal';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+	questionList = QuestionListPage;
+	
   constructor(public navCtrl: NavController, public modal : ModalController) {
   }
 
