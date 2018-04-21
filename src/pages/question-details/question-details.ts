@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the QModalPage page.
+ * Generated class for the QuestionDetailsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,21 +10,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-q-modal',
-  templateUrl: 'q-modal.html',
+  selector: 'page-question-details',
+  templateUrl: 'question-details.html',
 })
-export class QModalPage {
-  question = {}
+export class QuestionDetailsPage {
+  q : any
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.q = this.navParams.get('question');
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad QModalPage');
-  }
-
-  createQuestion() {
-    console.log(this.question);
-    this.navCtrl.pop();
+    console.log('ionViewDidLoad QuestionDetailsPage');
   }
 
 }

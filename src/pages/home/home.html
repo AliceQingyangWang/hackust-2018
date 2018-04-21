@@ -12,5 +12,6 @@
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
 
-  <button ion-button block (click)="openModal()"></button>
+  <button ion-button block (click)="openModal()">Ask a Question</button>
+  <button ion-button block color="danger" [navPush]="questionsPage" [navParams]="temp">Go to Questions</button>
 </ion-content>
