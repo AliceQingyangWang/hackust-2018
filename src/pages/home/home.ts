@@ -23,4 +23,8 @@ export class HomePage {
     let myQModal = this.modal.create(QModalPage);
     myQModal.present();
   }
+
+  openQuestionsPage(c : string) {
+    this.navCtrl.push(QuestionsPage, {category: c});
+  }
 }

@@ -6,11 +6,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { CategoryPage } from '../pages/category/category';
 import { QModalPage } from '../pages/q-modal/q-modal';
 import { QuestionsPage } from '../pages/questions/questions';
 import { QuestionDetailsPage } from '../pages/question-details/question-details';
-import { QuestionListPage } from '../pages/question-list/question-list';
 
 @NgModule({
   declarations: [
@@ -18,9 +16,7 @@ import { QuestionListPage } from '../pages/question-list/question-list';
     HomePage,
     QModalPage,
     QuestionsPage,
-    QuestionDetailsPage,
-	  QuestionListPage,
-    CategoryPage
+    QuestionDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -32,9 +28,7 @@ import { QuestionListPage } from '../pages/question-list/question-list';
     HomePage,
     QModalPage,
     QuestionsPage,
-    QuestionDetailsPage,
-	  QuestionListPage,
-    CategoryPage
+    QuestionDetailsPage
   ],
   providers: [
     StatusBar,
