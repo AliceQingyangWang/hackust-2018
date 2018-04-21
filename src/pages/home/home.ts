@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CategoryPage } from '../category/category';
 import { NavController, ModalController } from 'ionic-angular';
-import { QuestionListPage } from '../question-list/question-list';
 import { QModalPage } from '../q-modal/q-modal';  
 import { QuestionsPage } from '../questions/questions';
 @Component({
@@ -14,7 +13,6 @@ export class HomePage {
   
   temp = {category: "social" }
 
-	questionList = QuestionListPage;
 	categoryPage = CategoryPage;
   constructor(public navCtrl: NavController, public modal : ModalController) {
   }
