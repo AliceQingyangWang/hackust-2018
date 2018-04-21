@@ -25,12 +25,13 @@
       <ion-card-content>
         <p>{{q.body}}</p>
       </ion-card-content>
-      <ion-item>
+
+      <ion-item *ngIf="q.responses.length > 0">
         <ion-avatar item-left>
-          <img src="../../assets/imgs/logo.png">
+          <img src="{{q.responses[0].avatar}}">
         </ion-avatar>        
-        <h3>Dr. Derrick Lim, opthalmologist, Tseung Kwan O Hospital</h3>
-        <p>You shouldn't do that dummy</p>
+        <h3>{{q.responses[0].title}}</h3>
+        <p>{{q.responses[0].body}}</p>
       </ion-item>
       <ion-row>
           <ion-col>
