@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { QModalPage } from '../pages/q-modal/q-modal';
 import { QuestionsPage } from '../pages/questions/questions';
 import { QuestionDetailsPage } from '../pages/question-details/question-details';
+import { QFetcherProvider } from '../providers/q-fetcher/q-fetcher';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { QuestionDetailsPage } from '../pages/question-details/question-details'
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    QFetcherProvider
   ]
 })
 export class AppModule {}
