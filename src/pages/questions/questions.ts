@@ -10,10 +10,12 @@ import { QFetcherProvider } from '../../providers/q-fetcher/q-fetcher';
 })
 export class QuestionsPage {
   category : string
+  icon: string
   questions : any[]
   qDetailsPage : QuestionDetailsPage
   constructor(public navCtrl: NavController, public navParams: NavParams, private qFetcher : QFetcherProvider) {
     this.category = this.navParams.get('category');
+	this.icon = this.navParams.get('icon');
     this.questions = this.qFetcher.getQs(this.category);
   }
 
