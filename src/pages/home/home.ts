@@ -22,7 +22,7 @@ export class HomePage {
     myQModal.present();
   }
 
-  openQuestionsPage(c : string, i:string) {
-    this.navCtrl.push(QuestionsPage, {category: c,icon: i});
+  openQuestionsPage(c : string, i:string, co:string) {
+    this.navCtrl.push(QuestionsPage, {category: c,icon: i, navco:co});
   }
 }
